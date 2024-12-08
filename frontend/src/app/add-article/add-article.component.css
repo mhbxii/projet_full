@@ -1,137 +1,135 @@
+
+
 .container{
     /*margin-top: 10vh;*/
-    height: 100vh;
-    width: 100vw;
     padding-top: 25vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     gap: 1vw;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 
-input[type=text]{
-    border-radius: 3px;
-}
-
-.form {
-    width: 35%;
-    background: #00000079;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4vh 1vw;
-    border-radius: 10px;
-    color: #fff;
-    row-gap: 1vh;
-}
-
-.upperrow, .mid{
-    padding: 1vh 0;
-    height: 6vh;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.mid{
-    height: 10vh;
+.container img{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    flex-direction: row;
-    gap: 1vw;
-    align-items: center;
-    justify-content: space-between;
+    height: 100%;
+    object-fit: cover;
 }
 
-.upperrow input{
-    height: 4vh;
-    width: 88%;
+.form{
+    margin-top: -10px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    height: 400px;
+    width:500px;
+    background-color: rgb(126, 125, 125);
+    opacity: 90%; ;
+}
+.form h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.upperrow{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    display: flex;
+    justify-content:baseline;
+    gap:20px;
+    padding-left: 120px;
+    padding-top: 10px;
+}
+.mid{
+    display: flex;
+    justify-content:baseline;
+    gap:20px;
 }
 
 .mid div{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
     display: flex;
-    align-items: center;
-    height: 100%;
+    justify-content:baseline;
+    gap:15px;
+    padding-left: 120px;
+    padding-top: 30px;
 }
 
-.mid input{
-    height: 78%;
-    width: 15vw;
-}
-
-select, option{
-    height: 5vh;
-    width: 35%;
-    text-align: center;
-    background-color: antiquewhite;
-    border: 0.5px solid black;
-    border-radius: 3px;
+.mid #select{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height:10px;
+    margin-top: 30px;
 }
 
 .checkbox{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
     display: flex;
-    column-gap: 0.2vw;
-    justify-content: space-evenly;
-    width: 50%;
-    padding: 1vh 0;
+    justify-content:baseline;
+    gap:20px;
+    padding-left: 120px;
+    padding-top: 30px;
+}
+.checkbox b{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+.checkbox input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
 }
 
 .ptextarea{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
     display: flex;
-    flex-direction: column;
-    height: 10vh;
-    width: 70%;
-    align-items: space-between;
-    padding: 0 0 1vh 0;
+    justify-content:baseline;
+    gap:20px;
+    padding-left: 120px;
+    padding-top: 30px;
+}
+
+.ptextarea p{
+    padding-top: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
 }
 
 .ptextarea textarea{
-    min-height: 70%;
-    width: 100%;
-    resize: vertical;
-}
-
-.ptextarea textarea:focus{
-    outline: 0;
-}
-
-.btn{
-    padding: 1vh 0;
-    height: 20%;
-    width: 60%;
-}
-
-.btn button{
-    height: 100%;
-    width: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
 }
 
 .photo{
-    height: 6vh;
-    width: 60%;
-    background: rgba(223, 249, 231, 0.357);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
     display: flex;
-    align-items: center;
-    border-radius: 3px;
+    justify-content:baseline;
+    gap:20px;
+    padding-left: 120px;
+    padding-top: 30px;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
-.errmsg{
-    position: fixed;
-    top: 15vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 5vh;
-    width: 30vw;
-    background-color: #fecdd1; /* Light pinkish-red */
-    color: #721c24; /* Deep red text */
-
-    line-height: 5vh; /* For vertical centering of text */
-    border-radius: 5px; /* Optional: For rounded edges */
-    padding: 0 1vw;
-
+.btn button{
+    padding:10px 20px 10px 20px;
+    border-radius: 5px;
+    background-color:white;
+    color:rgb(126, 125, 125);
+    
 }
 
 @media all and (max-width: 1500px){

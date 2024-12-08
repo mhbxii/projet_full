@@ -1,14 +1,12 @@
 
 .container {
-    height: 80vh;
     margin-top: 15vh;
     width: 100%;
     max-width: 100%;
+    background-color:white;
     display: flex;
     justify-content: center;
     padding: 0 1vw 5vw 1vw;
-    overflow: visible;
-    transition: filter 0.3s ease, background-color 0.3s ease;
 }
 
 .container.blurred {
@@ -18,39 +16,42 @@
 
 .listArticles {
     display: grid;
-    height: auto;
-    grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
-    gap: 0.5vw;
-    width: 70%;
-    border-radius: 3px;
+    grid-template-columns: repeat(auto-fill, minmax(12vw, 1fr));
+    gap: 1vw;
+    width: 80vw;
+    max-width: 80vw;
+    border-radius: 10px;
     padding: 0.5vw;
     position: relative;
-    overflow: visible;
-    align-items: flex-start;
-    transition: 0.2s ease, background-color 0.2s ease;
     overflow: visible;
 }
 
 .navigationContainer {
+    margin-top: 150px;
     position: absolute;
-    bottom: -5vh; /* Adjust to place at the bottom */
+    bottom: -5vh; 
     left: 50%;
     transform: translateX(-50%); /* Center horizontally */
     display: flex; /* Flexbox to align buttons horizontally */
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
 }
   
+  
 .pageIndex {
-margin: 0 5px; /* Adds spacing between buttons */
-padding: 5px 10px;
-border-bottom: 1px solid #000;
-background-color: #f5f5f5;
-cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
 
 .pageIndex:hover {
-background-color: #ddd;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .navigation{
@@ -58,15 +59,15 @@ background-color: #ddd;
     width: 5vh;
     bottom: -5vh;
     cursor: pointer;
-    background: #aa9;
+    background: white;
     border-radius: 50%;
 }
 
 .rightBtn, .leftBtn{
-    border-radius: 5px;
+    color: #000;
     height: 4vh;
-    width: 20px;
-    background: #fa9;
+    width: 2vw;
+    background: transparent;
 }
 
 .filterDiv{

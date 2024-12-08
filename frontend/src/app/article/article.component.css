@@ -22,18 +22,16 @@
     background-color: #faf9fa;
 }
 
-.container:hover .articleName{
-    background-color: rgba(128, 255, 0);
-}
 
 .container:hover .below{
-    background-color: antiquewhite;
+    background-color: rgb(154, 154, 154);
 }
 
 .price{
-    color: rgb(250, 58, 58);
+    color: black;
     font-size: 26px;
     font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .container .img-container{
@@ -72,6 +70,7 @@
 
 .info2 img{
     width: 0.5vw;
+    
 }
 
 .articleName{
@@ -80,8 +79,8 @@
     border-radius: 5px;
     padding: 0.2vw 0.5vw;
     text-align: center;
-    background-color: rgba(128, 255, 0, 0.264);
     transition: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 @media all and (max-width: 1550px){

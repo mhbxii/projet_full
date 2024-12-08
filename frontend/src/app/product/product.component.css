@@ -70,14 +70,14 @@
 }
   
 .price {
-    color: rgb(215, 176, 117);
+    color: BLACK;
     font-size: 22px;
     margin-bottom: 20px;
 }
 
   
   .add-to-cart-btn {
-    background-color: rgb(215, 176, 117);
+    background-color: black;
     color: white;
     padding: 12px 24px;
     border: none;
@@ -87,7 +87,7 @@
 }
 
 .add-to-cart-btn:hover {
-    background-color: #bfa66d;
+    background-color: grey;
     transform: translateY(-2px); 
 }
   

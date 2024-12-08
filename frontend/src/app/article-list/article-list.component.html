@@ -3,6 +3,7 @@
     <app-filter></app-filter>
 </div>
 <div class="container" [class.blurred]="isFilterVisible">
+
     <div class="listArticles">
         <app-article *ngFor="let article of this.articles" [article]="article" (click)="onArticleClick(article)"></app-article>
         <div class="navigationContainer">

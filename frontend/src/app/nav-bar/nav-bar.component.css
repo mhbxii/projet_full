@@ -55,53 +55,39 @@ ul li{
 }
 
 .addarticle {
-    position: fixed;
-    top: 1.75%;
-    right: 20%;
-    
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #f0f0f0;
-    border: 1px dashed #000;
-    background:  #06c79a;
+    position: absolute;
+    left: 0;
 }
 
-.loginBtn, .logoutBtn, .addarticle{
-    border-radius: 50%;
-    height: 4.5vh;
-    width: 4.5vh;
-    cursor: pointer;
+.loginBtn, .logoutBtn ,.addarticle{
+    border-radius: 10px;
+    font-size: 1rem;
+    height: 90%;
+    width: 6vw;
+    background-color: #212121;
+    border: 0.1px solid black;
+    color: #fff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:15px;
+
 }
 
 .loginBtn, .logoutBtn {
-    position: fixed;
-    top: 1.75%;
-    right: 5%;
-    background-size: contain;
-    border: 0.1px dashed black;
-}
-
-.loginBtn{
-    background: url("../../assets/images/login.png") no-repeat center;
-    background-size: contain;
-    background-color: #d35400;
-}
-
-.logoutBtn{
-    background: url("../../assets/images/logout.png") no-repeat center;
-    background-size: contain;
-    background-color: #727272;
+    margin-right: 1vw;
+    background-color:white;
+    color: #000;
 }
 
 
 .loginBtn:hover, .logoutBtn:hover{
-    background-color: #e67e22;
+    cursor: pointer;
+    background-color:rgb(194, 192, 192);
 }
 
 .addarticle:hover{
-    background-color: #0f0;
+    cursor: pointer;
+    color:rgb(0, 0, 0) ;
+    background-color: rgb(172, 172, 172);
 }
 
 .profile {
@@ -134,7 +120,7 @@ ul li{
 
 .logo{
     width: 20%;
-    height: 200%;
+    height: 150%;
     position: relative;
 }
 

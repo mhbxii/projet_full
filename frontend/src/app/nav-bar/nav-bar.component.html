@@ -1,7 +1,7 @@
 <div class="container">
   <div class="leftside">
     <div class="logo">
-      <img src="assets/images/logo_0.jpg" alt="logo" />
+      <img src="assets/images/DABSHY.png" alt="logo" />
     </div>
     <ul>
       <li routerLink=""><img src="assets/images/home.png" /></li>
@@ -20,7 +20,7 @@
         *ngIf="this.router.url != '/addArticle'"
         (click)="goToAddArticle()"
       >
-        +
+        Add Article
       </button>
     </ng-container>
     <button
@@ -28,7 +28,9 @@
       class="loginBtn"
       *ngIf="!authService._isLoggedIn"
       (click)="goToLogin()"
-    ></button>
+    >
+    Login
+  </button>
 
       <img
         class="profile"
@@ -44,6 +46,7 @@
       class="logoutBtn"
       *ngIf="authService._isLoggedIn"
       (click)="this.authService.logout()"
-    ></button>
+    >LogOut
+  </button>
   </div>
 </div>

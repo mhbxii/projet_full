@@ -1,40 +1,45 @@
-<div class="form-container">
-  <div class="form-content">
-    <div class="form-left">
-      <form id="register" class="form" action="#" method="post">
-        <h2>Login!</h2>
-        <p>Enter your details to continue:</p>
-        <input
-          [(ngModel)]="credentials.email"
-          type="email"
-          name="email"
-          placeholder="Email"
-          id="email"
-          required
-        />
-        <input
-          [(ngModel)]="credentials.password"
-          type="password"
-          name="password"
-          placeholder="Password"
-          id="pwd"
-          required
-        />
+<body>
+  <div class="form-container">
+    <div class="form-content">
+      <div class="form-left">
+        <form id="register" class="form" action="#" method="post">
+          <h2>Login!</h2>
+          <p>Enter your details to continue:</p>
+          <input
+            [(ngModel)]="credentials.email"
+            type="email"
+            name="email"
+            placeholder="Email"
+            id="email"
+            required
+          />
+          <input
+            [(ngModel)]="credentials.password"
+            type="password"
+            name="password"
+            placeholder="Password"
+            id="pwd"
+            required
+          />
+  
+          <a routerLink="/signup">Don't have an account ? Sign Up now</a>
+  
+          <button type="button" (click)="verifInput()" class="submit-btn">
+            Login
+          </button>
 
-        <a routerLink="/signup">Don't have an account ? Sign Up now</a>
+          <div class="forgetpwd">
+            <button type="button" (click)="onForgotPassword()">
+              Forgot Password
+            </button>
+          </div>
+        </form>
+      </div>
 
-        <button type="button" (click)="verifInput()" class="submit-btn">
-          Login
-        </button>
-      </form>
-    </div>
-    <div class="forgetpwd">
-      <button type="button" (click)="onForgotPassword()">
-        Forgot Password
-      </button>
-    </div>
-    <div class="form-right">
-      <img src="assets/images/signup.jpg" alt="Mountains" class="form-image" />
+      <div class="form-right">
+        <img src="assets/images/signup.jpg" alt="Mountains" class="form-image" />
+      </div>
     </div>
   </div>
-</div>
+</body>
+
